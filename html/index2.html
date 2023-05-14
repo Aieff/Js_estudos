@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 28</title>
+</head>
+<body>
+      <!--- Farei o script dentro do body apenas por ser itens de estudo -->
+
+    <section>
+        <h1>O seu número é <span id="number-title"></span></h1>
+        <div id="texto"></div>
+    </section>
+    
+    <script>
+        const numero = Number(prompt('Digite um número'));
+        // numero = Number(numero); // Converter o valor para número logo deveria ser usado o (LET) 
+
+
+        // Metodo GET para puxar determinado valor
+        const numeroTitle = document.getElementById('number-title');
+        const divTexto = document.getElementById('texto');
+
+        numeroTitle.innerHTML = numero;
+
+        divTexto.innerHTML = 
+        `<p> Seu número - 2 é ${numero - 2} </p>
+        <p> Seu número + 2 é ${numero + 2} </p>
+        <p> Seu número X 2 é ${numero * 2} </p>`;
+    </script>
+
+</body>
+</html>

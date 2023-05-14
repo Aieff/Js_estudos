@@ -19,3 +19,8 @@ console.log(result5);
 
 const aleatorio = Math.round(Math.random() * (10 - 5) + 5); // Retorna um valor aleatorio entre 10 e 5 de forma inteira
 console.log(aleatorio);
+
+console.log(Math.PI); // Retorna o valor de PI
+
+console.log(Math.pow(2, 10)) // Retornar o valor de 2 elevado a 10
+
