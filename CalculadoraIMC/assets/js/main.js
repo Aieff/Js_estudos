@@ -1,4 +1,4 @@
-const form = document.querySelector('#form');
+ const form = document.querySelector('#form');
 
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Evita com que o navegador faça o padrão (Load)
