@@ -25,3 +25,10 @@ delete arrayNomes[1]; // Deleta o valor daquele indice e você fica com o elemen
 
 console.log(arrayNomes.slice(0, 3)); // Retorna os valores até o indice determinado se você quer do 0 ao 2 deve especificar 0 a 3
 
+const person = [
+    {name:"Felipe", age: 20},
+    {name:"Gabriel", age: 30},
+    {name:"Alexandre", age: 24},
+]
+
+console.log(person[0]); // Irá tratalo como um objeto

@@ -8,3 +8,7 @@
 
 const data = new Date();
 console.log(data.toString());
+
+console.log("dia", data.getDate())
+console.log("mês", data.getMonth())
+console.log("ano", data.getFullYear())

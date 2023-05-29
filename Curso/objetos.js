@@ -45,6 +45,7 @@ const pessoa4 = {
 
 };
 
+pessoa4.hair = "Black";
 // Aqui ele irá incrementar a idade a cada vez que ele for chamado
 pessoa1.fala();
 pessoa1.incrementaIdade();
