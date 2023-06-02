@@ -40,3 +40,22 @@ let arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(arrayNumber.join()) 
 console.log(nome.join()) 
 console.log(nome.split(" ")) // Splitar
+
+console.log(nome.split(" ").join("-"))
+
+// Maiusculas e minusculas
+let frase = "Olá eu me Chamo Gabriel Oliveira"
+console.log(frase.toLowerCase) // Minuscula
+console.log(frase.toUpperCase) // Maiuscula
+
+// Localizando strings
+console.log(frase.includes("!")) // True
+console.log(frase.includes("biel")) // False (Lembrete N != n) ideal usar LowerCase
+
+// Substituição de strings
+
+// Palavra/frase a ser buscada (Valor a ser inserido)
+console.log(frase.replace("Gabriel", "Alexandre"))
+
+let value = 13212.4324
+console.log(value.toFixed(2).replace(".", ","))
