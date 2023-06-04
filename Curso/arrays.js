@@ -32,3 +32,78 @@ const person = [
 ]
 
 console.log(person[0]); // Irá tratalo como um objeto
+
+
+
+// Manipulação de arrays
+
+let people = ['Felipe', 'Gabriel', 'Alexandre', 'David']
+
+console.log(people[2])
+console.log(people[people.length - 1]) // Ultimo indice
+
+console.log(people.slice(2)) // 2 em diante
+console.log(people.slice(1, 3))
+
+
+// Concatenação de arrays
+
+let set1 = [1, 4, 6, 8, 9, 0]
+let set2 = [2, 5, 8, 3, 7, 9]
+
+console.log(set1 + set2) // Na pratica cria uma string ou seja (ERRADO) "COERSION"
+
+console.log([set1, set2]) // Cria um novo array com 2 sub-arrays (ERRADO)
+
+console.log(set1.concat(set2)) // Cria um novo array concatenado (CORRETO)
+
+
+
+// Desestruturação
+let set = [1, 2, 3, 4, 5]
+
+let [n1, n2] = set // 1, 2 // Retorna o elemento
+console.log('N1', n1)
+console.log('N2', n2)
+
+// Util em funções que retornam arrays
+function myFunction() {
+    const x = 10
+    const y = 400
+
+    return [x, y]
+}
+
+const [x, y] = myFunction()
+console.log("X", x)
+console.log("Y", y)
+
+
+
+// Filter
+const numbers = [10, 18, 1, 15]
+
+let res = numbers.filter((n) => n > 10) // Arrow function
+console.log(res)
+
+
+const people1 = [
+    {
+        name: 'Paulo',
+        age: 30,
+        gender: 'M'
+    },
+    {
+        name: 'Carlos',
+        age: 14,
+        gender: 'M'
+    },
+    {
+        name: 'Ana',
+        age: 18,
+        gender: 'M'
+    }
+]
+
+const m = people1.filter((p) => p.age >= 18 && p.gender === 'M')
+console.log(m)
