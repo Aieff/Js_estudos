@@ -107,3 +107,90 @@ const people1 = [
 
 const m = people1.filter((p) => p.age >= 18 && p.gender === 'M')
 console.log(m)
+
+
+
+
+// Map
+const array = [1, 3, 5, 6, 7, 8]
+
+// Multiplica por 2 o valor de cada indice
+const double = numbers.map((n) => n * 2)
+console.log(double)
+
+
+const fr = [0, 32, 45, 46, 47, 91, 93, 121]
+const celcius = fr.map((t) => Math.round(((t - 32) * 5) / 9)) // Round nivelar os números (arredondar)
+console.log(celcius)
+
+const people2 = [
+    {
+        name: 'feLipe',
+        age: 40
+    },
+    {
+        name: 'CarLos',
+        age: 14
+    },
+    {
+        name: 'Ana',
+        age: 18
+    }
+]
+
+// Nivelar o conjunto de dados
+const peopleNormalized = people2.map((p) => p.name.toUpperCase())
+console.log(peopleNormalized)
+
+
+
+// Reduce
+
+    // Ref. https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
+    // array.reduce(callback[, initialValue])
+    //
+    // callback - Função que é executada em cada valor no array, recebe quatro argumentos:
+    //   acumulator - O valor retornado na última invocação do *callback*, ou o argumento Valor Inicial, se fornecido.
+    //   currentValue - O elemento atual que está sendo processado no array.
+    //   indice - O índice do elemento atual que está sendo processado no array.
+    //   array - O array ao qual a função reduce foi chamada.
+    // initialValue - Opcional. Objeto a ser usado como o primeiro argumento da primeira chamada da função callback.
+
+    let values = [1.5, 2, 4, 10]
+
+    function callback(acumulator, currentValue, index, array) {
+      console.log(`acumulator`, acumulator)
+      console.log(`currentValue`, currentValue)
+      console.log(`index`, index)
+      console.log(`array`, array)
+      console.log("---")
+
+      return acumulator
+    }
+
+    values.reduce(callback, 0)
+
+    // Agregação
+    // let sum = values.reduce((total, item) => total + item, 0)
+    // console.log("sum", sum)
+
+    // let avg = values.reduce(
+    //   (total, item, index) => (total + item) / (index + 1),
+    //   0
+    // )
+    // console.log("avg", avg)
+
+    // Map
+    // let double = values.reduce((total, item) => total.concat(item * 2), [])
+    // console.log("double", double)
+
+    // Filter
+    // let newValues = values.reduce((total, item) => {
+    //   if (item > 2) {
+    //     total.push(item)
+    //   }
+
+    //   return total
+    // }, [])
+    // console.log("newValues", newValues)
