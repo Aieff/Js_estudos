@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+
+    <script>
+    // Ref. https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+        // Uma boa pratica para organizar seu código
+        document.addEventListener("DOMContentLoaded", main)
+        const main = () => {
+            // Func 1
+            // Func 2
+            // Func 3
+            // Func 4
+        }
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const elemOne = document.getElementById("title")
+            console.log("Element One", elemOne)
+        })
+    </script> <!-- Me retorna Null pela ordem em que se encontra o script (Antes do meu title H1)-->
+
+    <!-- DOMContentLoaded ele irá previnir que meu script seja carregado antes de todo meu HTML -->
+
+    <h1 id="title">Minha Página</h1>
+
+</body>
+</html>
